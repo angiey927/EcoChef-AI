@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import google.generativeai as genai
 import io
+import time
 
 # --------------------
 # APP CONFIG
@@ -46,7 +47,56 @@ st.markdown("""
 # --------------------
 # HEADER SECTION
 # --------------------
+#Title
 st.markdown("<h1 class='main-title'>👨‍🍳 Eco Chef <span style='color:#0c8f38;'>AI</span></h1>", unsafe_allow_html=True)
+
+#Tagline
+st.markdown("<p class='subtitle'>Cook it, don’t waste it.</p>", unsafe_allow_html=True)
+
+#Description of features
+# Inject HTML + CSS animation
+st.markdown("""
+<style>
+.subtitle-container {
+  position: relative;
+  height: 2em;
+  overflow: hidden;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #228B22;
+  text-align: center;
+  margin: 1em auto;
+  width: 80%;
+}
+
+.subtitle-container span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  animation: cycleTaglines 9s infinite;
+}
+
+.subtitle-container span:nth-child(1) { animation-delay: 0s; }
+.subtitle-container span:nth-child(2) { animation-delay: 3s; }
+.subtitle-container span:nth-child(3) { animation-delay: 6s; }
+
+@keyframes cycleTaglines {
+  0% { opacity: 0; transform: translateY(100%); }
+  10% { opacity: 1; transform: translateY(0%); }
+  30% { opacity: 1; transform: translateY(0%); }
+  40% { opacity: 0; transform: translateY(-100%); }
+  100% { opacity: 0; }
+}
+</style>
+
+<div class="subtitle-container">
+  <span>Turn your leftover ingredients into delicious recipes with AI-powered suggestions.</span>
+  <span>Connect your groceries list to shop smarter and greener.</span>
+  <span>Show us what's in your fridge, and we'll supply the recipes, customized for you.</span>
+</div>
+""", unsafe_allow_html=True)
+
 st.markdown("<p class='subtitle'>Cook it, don’t waste it.</p>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Turn your leftover ingredients into delicious recipes with AI-powered suggestions.</p>", unsafe_allow_html=True)
 
