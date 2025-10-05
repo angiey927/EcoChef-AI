@@ -12,7 +12,7 @@ Authentication System – Secure signup/login modal with validation for name, em
 Green UI – Custom Streamlit CSS theme with clean cards and inline validation messages.
 Logout & Session State Management – Handles user sessions cleanly without reloading the page.
 
-### 🧠 Tech Stack
+## 🧠 Tech Stack
 
 Python 3.10+
 
@@ -24,38 +24,24 @@ Pillow (PIL) for image handling
 
 SQLite (user_store.py) for local user authentication storage
 
-### 📁 Project Structure
+## ⚙️ Installation & Setup
 
-EcoChefAI/
-│
-├── newapp.py            # main Streamlit application
-├── user_store.py        # handles signup/login verification & DB setup
-├── requirements.txt     # dependency list
-└── README.md            # project documentation
-
-
-### ⚙️ Installation & Setup
-
-1. Clone the repository
+1. Clone the repository :
 
 git clone https://github.com/your-username/EcoChefAI.git
 cd EcoChefAI
 
-2. Set up Google Gemini API Key
+2. Set up Google Gemini API Key :
 
 Obtain a key from Google AI Studio
 Replace the placeholder in newapp.py:
 genai.configure(api_key="YOUR_API_KEY_HERE")
 
-3. Run the app
+3. Run the app : streamlit run newapp.py
 
-streamlit run newapp.py
+4. Open the browser : http://localhost:8501
 
-4. Open the browser
-
-http://localhost:8501
-
-### Authentication Details
+## Authentication Details
 
 Only emails ending in gmail.com, yahoo.com, hotmail.com, or school.edu are accepted.
 
@@ -63,7 +49,7 @@ Password must be ≥ 6 characters and contain letters + numbers.
 
 User records are stored locally via user_store.py (SQLite database).
 
-### 🧩 How It Works
+## 🧩 How It Works
 
 User Signup/Login → Validates inputs and creates/stores user record.
 
@@ -75,9 +61,9 @@ Recipe Generator → Generates 3 AI-powered recipes using those ingredients.
 
 Output Display → Recipes are rendered in Streamlit with clean cards and headings.
 
-### 🧾 Example Usage
+## 🧾 Example Usage
 
-## Manual Mode:
+### Manual Mode:
 
 Expand “🧺 Add ingredients manually”
 
@@ -85,7 +71,7 @@ Enter: Eggs, Vegetable, 2, unit
 
 Add more ingredients and click Add Ingredient.
 
-## Image Mode:
+### Image Mode:
 
 Click Upload Image and choose a photo of your fridge.
 
@@ -93,7 +79,7 @@ The Gemini model lists ingredients it detects.
 
 Recipes appear automatically below the image.
 
-### 🪴 UI Highlights
+## 🪴 UI Highlights
 
 Modal Dialogs for login/signup instead of page switching
 
@@ -103,7 +89,7 @@ Hidden toolbar & footer for clean presentation
 
 Logout button fixed at top-right corner
 
-### Future Improvements
+## Future Improvements
 
 Nutritional breakdown for each recipe
 
