@@ -6,10 +6,15 @@ Eco Chef AI is a smart, sustainable cooking assistant built with Streamlit and G
 ## 🌿 Features
 
 AI Ingredient Detection – Upload an image of your fridge and Gemini 2.5 Flash automatically identifies visible fruits, vegetables, and other food items.
+
 Recipe Generation – Instantly receive 3 healthy recipes using only the detected ingredients.
+
 Manual Ingredient Input – Add ingredients manually with category, quantity, and unit fields.
+
 Authentication System – Secure signup/login modal with validation for name, email, and password.
+
 Green UI – Custom Streamlit CSS theme with clean cards and inline validation messages.
+
 Logout & Session State Management – Handles user sessions cleanly without reloading the page.
 
 ## 🧠 Tech Stack
