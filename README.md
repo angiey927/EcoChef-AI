@@ -33,7 +33,7 @@ SQLite (user_store.py) for local user authentication storage
 
 1. Clone the repository :
 
-git clone https://github.com/your-username/EcoChefAI.git
+git clone https://github.com/angiey927/EcoChefAI.git
 cd EcoChefAI
 
 2. Set up Google Gemini API Key :
