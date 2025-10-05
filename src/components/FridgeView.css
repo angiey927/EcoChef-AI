@@ -1,0 +1,152 @@
+.fridge-container {
+  padding: 20px;
+  background-color: #f5fff5;
+  border-radius: 8px;
+}
+
+.fridge-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2f7d32;
+  margin-bottom: 20px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ingredient {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.add-ingredient-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .add-ingredient-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .ingredient-input,
+  .ingredient-select,
+  .quantity-input,
+  .unit-select,
+  .add-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .quantity-input {
+    text-align: left;
+    padding-left: 12px;
+  }
+
+  .fridge-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .ingredients-list {
+    margin-bottom: 15px;
+  }
+
+  .ingredient {
+    width: 100%;
+  }
+}
+
+.ingredient-input,
+.ingredient-select,
+.quantity-input,
+.unit-select {
+  padding: 12px;
+  border: 2px solid #2f7d32;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2f7d32;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.ingredient-input::placeholder {
+  color: #88c18a;
+}
+
+.ingredient-input:focus,
+.ingredient-select:focus,
+.quantity-input:focus,
+.unit-select:focus {
+  outline: none;
+  border-color: #1b5e20;
+  box-shadow: 0 0 0 2px rgba(47, 125, 50, 0.1);
+}
+
+.ingredient-input {
+  flex: 2;
+  min-width: 200px;
+}
+
+.ingredient-select {
+  flex: 1;
+  min-width: 120px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%232f7d32' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+.quantity-input {
+  width: 80px;
+  text-align: center;
+}
+
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  opacity: 1;
+  height: 30px;
+}
+
+.unit-select {
+  min-width: 100px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%232f7d32' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+.add-button {
+  background-color: #2f7d32;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background-color: #1b5e20;
+}
